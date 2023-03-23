@@ -45,6 +45,8 @@ for i in range(0, times):
         print('El resultado es incorrecto')
         incorrecto += 1
 
+    #
+
 # Al terminar la cantidad de cuentas a resolver
 # Se vuelve a tomar la fecha y hora
 end_time = datetime.now()
