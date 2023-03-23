@@ -23,7 +23,10 @@ for i in range(0, times):
         resultado = number_1 + number_2
     elif operator == '-':
         resultado = number_1 - number_2
-    elif (operator == '/') and (number_2 != 0):
+    elif (operator == '/'):
+        #Chequeo que number_2 no sea 0
+        if (number_2 == 0):
+            number_2 = randrange(1,10)
         resultado = number_1 / number_2
     else:
         resultado = number_1 * number_2
@@ -32,7 +35,7 @@ for i in range(0, times):
     print(f'{i+1}- Cuanto es {number_1} {operator} {number_2}')
 
     # Le pedimos al usuario el resultado
-    result = int(input('Ingrese el resultado: '))
+    result = float(input('Ingrese el resultado: '))
 
     # Compruebo si el resultado es correcto
     if result == resultado:
